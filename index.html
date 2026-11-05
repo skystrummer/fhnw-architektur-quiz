@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier-Quiz Muttenz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="arbeitsplatz">
+        <aside class="modell" aria-label="Punktestand">
+            <h1>Atelier-Quiz Muttenz</h1>
+            <p class="einleitung">Der Campus hat 14 Geschosse. Jede richtige Antwort setzt eines davon aufs Modell.</p>
+
+            <div class="stand">
+                <div id="geschosse" class="geschosse" aria-hidden="true"></div>
+                <p class="punkte">
+                    <span class="punkte-wert"><span id="score">0</span>/<span id="total">14</span></span>
+                    <span class="punkte-text">Punkte</span>
+                </p>
+            </div>
+
+            <button id="reset-button" class="knopf knopf-reset" type="button">Zurücksetzen</button>
+        </aside>
+
+        <section class="blatt">
+            <p id="fortschritt" class="fortschritt"></p>
+            <h2 id="frage" tabindex="-1"></h2>
+            <div id="antworten" class="antworten"></div>
+
+            <div id="rueckmeldung" class="rueckmeldung" role="status" aria-live="polite"></div>
+            <button id="weiter-button" class="knopf knopf-weiter" type="button" hidden>Nächste Frage</button>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
